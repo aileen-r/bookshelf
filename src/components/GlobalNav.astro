@@ -1,0 +1,22 @@
+---
+import SessionLink from "./SessionLink.vue";
+const { cookies } = Astro;
+
+const accessToken = cookies.get("sb-access-token");
+const refreshToken = cookies.get("sb-refresh-token");
+
+const loggedIn = Boolean(accessToken && refreshToken);
+---
+
+<nav>
+  <a href="/">Home</a>
+  <SessionLink loggedIn={loggedIn}/>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+</style>

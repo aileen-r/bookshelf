@@ -1,5 +1,5 @@
 ---
-
+import GlobalNav from "../components/GlobalNav.astro"
 ---
 
 <html lang="en">
@@ -11,15 +11,7 @@
     <title>Aileen's Bookshelf</title>
   </head>
   <body>
-    <nav><a href="/">Home</a> <a href="/auth/signin">Sign In</a></nav>
+    <GlobalNav server:defer/>
     <slot />
   </body>
 </html>
-
-<style>
-  nav {
-    display: flex;
-    gap: 8px;
-    justify-content: flex-end;
-  }
-</style>

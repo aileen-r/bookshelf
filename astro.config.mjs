@@ -11,5 +11,7 @@ export default defineConfig({
   // integrations: [vue({devtools: true})],
   integrations: [vue()],
 
-  adapter: netlify(),
+  adapter: netlify({
+    middlewareMode: 'edge',
+  }),
 });
