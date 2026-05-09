@@ -1,0 +1,20 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import BookList from "../../components/index/BookList.vue";
+import { getBooksCount } from "../../data/books";
+
+export async function getStaticPaths() {
+  const pageCount = (await getBooksCount()).pageCount;
+  console.log(pageCount)
+  const paths = Array.apply(null, Array(pageCount + 1)).map((_, idx) => ({ params: { page: idx.toString() } }));
+  return paths;
+}
+
+const page = Number(Astro.params.page) || 1;
+
+// Index page
+---
+
+<Layout>
+  <BookList activePage={page} />
+</Layout>

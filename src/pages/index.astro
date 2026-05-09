@@ -1,13 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import BookList from "../components/BookList.vue"
-import {getBooks} from "../data/books";
-
-const books = (await getBooks())?.map(book => book.title);
+import BookList from "../components/index/BookList.vue"
 
 // Index page
 ---
 
 <Layout>
-  <BookList books={books} />
+  <BookList activePage={1} />
 </Layout>
