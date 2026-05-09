@@ -1,11 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import BookList from "../components/BookList.vue"
+import {getBooks} from "../data/books";
+
+const books = (await getBooks())?.map(book => book.title);
 
 // Index page
 ---
 
 <Layout>
-	<h1>Aileen's Bookshelf</h1>
-	<p>A WIP project. Trying to build a lightweight replacement for how I use Goodreads because fuck Bezos. <a href="https://github.com/aileen-r/bookshelf">GitHub repo link</a> for the curious.</p>
-	<p>Book icon by Evan Bond from <a href="https://thenounproject.com/browse/icons/term/book/" target="_blank" title="Book Icons">Noun Project</a> (CC BY 3.0)</p>
+  <BookList books={books} />
 </Layout>
