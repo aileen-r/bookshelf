@@ -1,23 +1,23 @@
 ---
-import SessionLink from "./SessionLink.vue";
-const { cookies } = Astro;
-
-const accessToken = cookies.get("sb-access-token");
-const refreshToken = cookies.get("sb-refresh-token");
-
-const loggedIn = Boolean(accessToken && refreshToken);
+import DarkModeToggle from "./DarkModeToggle.vue";
+import SessionLink from "./SessionLink.astro";
 ---
 
 <nav>
   <a href="/">Home</a>
   <a href="/about">About</a>
-  <SessionLink loggedIn={loggedIn}/>
-</nav>
+  <div class="nav-right">
+    <SessionLink server:defer class="SessionLink" />
+    <DarkModeToggle client:load />
+  </div>
 
-<style>
-  nav {
-    display: flex;
-    gap: 8px;
-    justify-content: flex-end;
-  }
-</style>
+  <style>
+    nav {
+      display: flex;
+      gap: 8px;
+    }
+    .nav-right {
+      margin-left: auto;
+    }
+  </style>
+</nav>

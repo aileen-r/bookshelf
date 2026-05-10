@@ -1,0 +1,26 @@
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+}
+
+input, progress {
+  accent-color: var(--color-primary);
+}
+
+::selection,
+::-moz-selection {
+  background: var(--selection-color);
+}

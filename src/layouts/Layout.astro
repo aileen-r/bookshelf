@@ -1,8 +1,11 @@
 ---
-import GlobalNav from "../components/GlobalNav.astro"
+import GlobalNav from "../components/GlobalNav.astro";
+
+import "../styles/colors.css";
+import "../styles/global.css";
 ---
 
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -11,7 +14,7 @@ import GlobalNav from "../components/GlobalNav.astro"
     <title>Aileen's Bookshelf</title>
   </head>
   <body>
-    <GlobalNav server:defer/>
+    <GlobalNav />
     <slot />
   </body>
 </html>

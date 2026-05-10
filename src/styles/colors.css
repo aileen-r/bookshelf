@@ -1,0 +1,118 @@
+:root {
+  --color-pink-50: hsl(349.1 64.7% 96.7%);
+  --color-pink-100: hsl(348 66.7% 94.1%);
+  --color-pink-200: hsl(348 71.4% 87.6%);
+  --color-pink-300: hsl(347.6 72.3% 81.6%);
+  --color-pink-400: hsl(345.8 74.6% 72.2%);
+  --color-pink-500: hsl(341.8 78.2% 60.4%);
+  --color-pink-600: hsl(340.7 57.3% 46.9%);
+  --color-pink-700: hsl(340.9 59.8% 35.1%);
+  --color-pink-800: hsl(341.3 62.6% 24.1%);
+  --color-pink-900: hsl(340.8 71.4% 13.7%);
+  --color-pink-950: hsl(341.1 79.2% 9.4%);
+
+  --color-seafoam-50: hsl(175 66.7% 92.9%);
+  --color-seafoam-100: hsl(174 60.6% 87.1%);
+  --color-seafoam-200: hsl(174.2 52.2% 72.9%);
+  --color-seafoam-300: hsl(174.4 41.5% 59.8%);
+  --color-seafoam-400: hsl(174.1 52.8% 51%);
+  --color-seafoam-500: hsl(174.5 59.8% 42.9%);
+  --color-seafoam-600: hsl(174.4 67.6% 33.9%);
+  --color-seafoam-700: hsl(174.1 75.9% 26.1%);
+  --color-seafoam-800: hsl(174.4 86.2% 17.1%);
+  --color-seafoam-900: hsl(174.5 95.7% 9%);
+  --color-seafoam-950: hsl(174 100% 3.9%);
+
+  --color-lavender-50: hsl(270 44.4% 96.5%);
+  --color-lavender-100: hsl(274.3 36.8% 92.5%);
+  --color-lavender-200: hsl(271.3 32.4% 86.1%);
+  --color-lavender-300: hsl(272 27.3% 78.4%);
+  --color-lavender-400: hsl(274 33.3% 68.8%);
+  --color-lavender-500: hsl(274.7 36.9% 59.6%);
+  --color-lavender-600: hsl(276.4 33.9% 48.6%);
+  --color-lavender-700: hsl(277 38.6% 37.1%);
+  --color-lavender-800: hsl(277.6 45% 25.7%);
+  --color-lavender-900: hsl(279.5 57.9% 14.9%);
+  --color-lavender-950: hsl(279.5 73.1% 10.2%);
+
+  --color-blue-50: hsl(217.5 80% 96.1%);
+  --color-blue-100: hsl(216 77.8% 91.2%);
+  --color-blue-200: hsl(216 76.1% 82%);
+  --color-blue-300: hsl(215.6 75.9% 73.9%);
+  --color-blue-400: hsl(216.2 76.4% 65.1%);
+  --color-blue-500: hsl(215.9 76.8% 56.1%);
+  --color-blue-600: hsl(215.7 76.6% 46.9%);
+  --color-blue-700: hsl(216.1 76.9% 39%);
+  --color-blue-800: hsl(215.9 76.5% 30%);
+  --color-blue-900: hsl(216.3 75.7% 21%);
+  --color-blue-950: hsl(216 76.5% 16.7%);
+
+  --color-grey-50: hsl(225 15.4% 94.9%);
+  --color-grey-100: hsl(226.7 17.6% 90%);
+  --color-grey-200: hsl(228.8 16.3% 80.8%);
+  --color-grey-300: hsl(227.5 16.2% 71%);
+  --color-grey-400: hsl(229.1 16.6% 61%);
+  --color-grey-500: hsl(229.8 16.1% 50%);
+  --color-grey-600: hsl(227.6 16.7% 40%);
+  --color-grey-700: hsl(228 16.3% 30%);
+  --color-grey-800: hsl(228.8 15.7% 20%);
+  --color-grey-900: hsl(226.7 17.6% 10%);
+  --color-grey-950: hsl(240 15.4% 5.1%);
+
+  --color-red-50: hsl(0 75% 96.9%);
+  --color-red-100: hsl(0 73% 92.7%);
+  --color-red-200: hsl(0 75.7% 85.5%);
+  --color-red-300: hsl(0 76.8% 78%);
+  --color-red-400: hsl(0 80.3% 70.2%);
+  --color-red-500: hsl(0.4 83.1% 60.6%);
+  --color-red-600: hsl(0.4 62.7% 47.3%);
+  --color-red-700: hsl(0 64.6% 35.5%);
+  --color-red-800: hsl(0.7 69.4% 24.3%);
+  --color-red-900: hsl(0 77.5% 13.9%);
+  --color-red-950: hsl(0 83.7% 9.6%);
+
+  --color-amber-50: hsl(31.6 90.5% 95.9%);
+  --color-amber-100: hsl(32.4 90.2% 92%);
+  --color-amber-200: hsl(32 92.6% 84.1%);
+  --color-amber-300: hsl(32.2 92.5% 73.9%);
+  --color-amber-400: hsl(31.9 92.6% 62.9%);
+  --color-amber-500: hsl(32.2 92.5% 52.9%);
+  --color-amber-600: hsl(32.1 92.5% 42%);
+  --color-amber-700: hsl(32.2 92.6% 32%);
+  --color-amber-800: hsl(32.1 92.5% 21%);
+  --color-amber-900: hsl(32.3 92.9% 11%);
+  --color-amber-950: hsl(32.5 92.3% 5.1%);
+
+  --color-green-50: hsl(86.7 50% 92.9%);
+  --color-green-100: hsl(87 52.6% 85.1%);
+  --color-green-200: hsl(85.8 51.6% 70%);
+  --color-green-300: hsl(85.9 51.8% 55.3%);
+  --color-green-400: hsl(86.1 51.7% 47.1%);
+  --color-green-500: hsl(86.2 51.8% 39%);
+  --color-green-600: hsl(86.1 52.1% 32%);
+  --color-green-700: hsl(86.7 51.2% 24.1%);
+  --color-green-800: hsl(85.7 51.2% 16.1%);
+  --color-green-900: hsl(85.7 51.2% 8%);
+  --color-green-950: hsl(84 50% 3.9%);
+
+  --font-heading: "Crimson Pro", serif;
+  --font-body: "Urbanist", sans-serif;
+
+  --color-primary: var(--color-pink-500);
+}
+
+[data-theme="light"] {
+  --text-color: var(--color-grey-900);
+  --background-color: var(--color-grey-50);
+  --link-color: var(--color-seafoam-700);
+  --heading-color: var(--color-grey-950);
+  --selection-color: var(--color-lavender-300);
+}
+
+[data-theme="dark"] {
+  --text-color: var(--color-grey-200);
+  --background-color: var(--color-grey-950);
+  --link-color: var(--color-seafoam-400);
+  --heading-color: var(--color-grey-50);
+  --selection-color: var(--color-lavender-700);
+}
