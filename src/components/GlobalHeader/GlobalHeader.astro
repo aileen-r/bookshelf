@@ -1,6 +1,6 @@
 ---
-import DarkModeToggle from "../DarkModeToggle.vue";
-import SessionLink from "../SessionLink.astro";
+import DarkModeToggle from "./DarkModeToggle.vue";
+import AuthDropdown from "./AuthDropdown.astro";
 import GlobalNav from "./GlobalNav.vue";
 ---
 
@@ -9,14 +9,14 @@ import GlobalNav from "./GlobalNav.vue";
   <h1>Aileen's Bookshelf</h1>
   <div class="nav-right">
     <GlobalNav />
-    <!-- <SessionLink server:defer /> -->
     <DarkModeToggle client:load />
+    <AuthDropdown server:defer />
   </div>
 </header>
 
 <style scoped>
   header {
-    align-items: baseline;
+    align-items: center;
     display: flex;
     margin-bottom: 32px;
     padding: 8px 16px;
@@ -25,8 +25,6 @@ import GlobalNav from "./GlobalNav.vue";
   img {
     height: 1.5rem;
     margin-right: 4px;
-    position: relative;
-    top: 0.25rem;
   }
 
   h1 {
@@ -36,6 +34,8 @@ import GlobalNav from "./GlobalNav.vue";
   }
 
   .nav-right {
+    align-items: center;
+    display: flex;
     margin-left: auto;
   }
 

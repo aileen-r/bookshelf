@@ -1,4 +1,6 @@
 ---
+import AuthDropdownInner from "./AuthDropdownInner.vue";
+
 const { cookies } = Astro;
 
 const accessToken = cookies.get("sb-access-token");
@@ -7,14 +9,4 @@ const refreshToken = cookies.get("sb-refresh-token");
 const loggedIn = Boolean(accessToken && refreshToken);
 ---
 
-{
-  loggedIn ? (
-    <a v-if="loggedIn" href="/api/auth/signout" @click="signOut">
-      Sign Out
-    </a>
-  ) : (
-    <a v-else href="/auth/signin">
-      Sign In
-    </a>
-  )
-}
+<AuthDropdownInner logged-in={loggedIn} client:load />
