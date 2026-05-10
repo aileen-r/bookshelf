@@ -1,7 +1,8 @@
 ---
-import GlobalNav from "../components/GlobalNav.astro";
+import GlobalHeader from "../components/GlobalHeader/GlobalHeader.astro";
 
 import "../styles/colors.css";
+import "../styles/reset.css";
 import "../styles/global.css";
 ---
 
@@ -14,7 +15,7 @@ import "../styles/global.css";
     <title>Aileen's Bookshelf</title>
   </head>
   <body>
-    <GlobalNav />
+    <GlobalHeader />
     <slot />
   </body>
 </html>

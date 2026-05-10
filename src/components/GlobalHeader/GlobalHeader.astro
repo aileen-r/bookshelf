@@ -1,0 +1,53 @@
+---
+import DarkModeToggle from "../DarkModeToggle.vue";
+import SessionLink from "../SessionLink.astro";
+import GlobalNav from "./GlobalNav.vue";
+---
+
+<header role="banner">
+  <img src="/favicon.svg" alt="Book logo" />
+  <h1>Aileen's Bookshelf</h1>
+  <div class="nav-right">
+    <GlobalNav />
+    <!-- <SessionLink server:defer /> -->
+    <DarkModeToggle client:load />
+  </div>
+</header>
+
+<style scoped>
+  header {
+    align-items: baseline;
+    display: flex;
+    margin-bottom: 32px;
+    padding: 8px 16px;
+  }
+
+  img {
+    height: 1.5rem;
+    margin-right: 4px;
+    position: relative;
+    top: 0.25rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    line-height: normal;
+    margin-right: 32px;
+  }
+
+  .nav-right {
+    margin-left: auto;
+  }
+
+  .SeparatorRoot {
+    background-color: var(--color-green-900);
+  }
+  .SeparatorRoot[data-orientation="horizontal"] {
+    height: 1px;
+    width: 100%;
+  }
+  .SeparatorRoot[data-orientation="vertical"] {
+    height: 100%;
+    width: 1px;
+  }
+</style>
